@@ -85,19 +85,19 @@ img {
   list-style: none;
 }
 
-.header-container,
-.nav-header,
+.container.menu,
+.navigation,
 .nav-menu {
   display: flex;
   align-items: center;
 }
 
-.header-container {
+.container.menu {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.nav-header,
+.navigation,
 .nav-menu,
 .contacts-menu {
   gap: 50px;
