@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -11,8 +13,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -20,31 +20,39 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <div class="header-container container">
-        <nav class="nav-header">
-          <a class="logo-link" href="index.html">
+      <div class="container menu">
+        <!--from head-container to container menu -->
+        <nav class="navigation">
+          <!-- form nav-header to navigation -->
+          <a class="logo-link link" href="index.html">
             <span class="logo">WEB</span><span class="studio">STUDIO</span></a
           >
+          <!-- from logo-link to logo-link link -->
           <ul class="nav-menu list">
-            <li>
+            <li class="item">
+              <!-- *NOTE! all li has class=item -->
               <a class="page current" href="index.html">Studio</a>
             </li>
-            <li>
-              <a class="page" href="porfolio.html">Portfolio</a>
+            <li class="item">
+              <a class="page link" href="porfolio.html">Portfolio</a>
+              <!-- from page to page link -->
             </li>
-            <li>
-              <a class="page" href="">Contacts</a>
+            <li class="item">
+              <a class="page link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts-menu list">
-          <li>
-            <a class="item" href="mailto:info@devstudio.com"
+          <li class="item">
+            <a class="contact link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
+            <!-- from item to contact link -->
           </li>
-          <li>
-            <a class="item" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <li class="item">
+            <a class="contact link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </div>
@@ -53,24 +61,23 @@
     <main>
       <!-- hero section -->
       <section class="hero bg-hero">
-        <div class="hero-container container">
-          <div>
-            <h1 class="hero-title">
-              Effective Solutions <br />
-              for Your Business
-            </h1>
-          </div>
-          <div class="button-center">
-            <button class="button primary" type="button">Order Service</button>
-          </div>
+        <div class="container">
+          <!-- from hero-container to container -->
+          <h1 class="hero-title">
+            Effective Solutions <br />
+            for Your Business
+          </h1>
+          <button class="button primary" type="button">Order Service</button>
         </div>
       </section>
 
       <!-- Features -->
       <section class="section">
-        <div class="feature-container container">
+        <div class="container">
+          <!-- from feature-container to container -->
           <ul class="benefits list">
-            <li>
+            <li class="item">
+              <!-- all li has class=item -->
               <h3 class="title">Strategy</h3>
               <p class="description">
                 Our goal is to identify the business
@@ -80,7 +87,7 @@
                 perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Punctuality</h3>
               <p class="description">
                 Bring the key message to the
@@ -90,7 +97,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Diligence</h3>
               <p class="description">
                 Research and confirm brands that
@@ -100,7 +107,7 @@
                 opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Technologies</h3>
               <p class="description">
                 Design practice focused on digital
@@ -115,32 +122,38 @@
       </section>
 
       <!-- What are we doing -->
-      <section class="section">
-        <div class="what-we-do-container container">
+      <section class="section no-top-padding">
+        <!-- from section to section no-top-padding -->
+        <div class="container">
+          <!-- from what-we-do-container to container -->
           <h2 class="section-title">What Are We Doing</h2>
           <ul class="what-we-do list">
-            <li>
+            <li class="item">
+              <!-- all li has class=item -->
               <img
                 src="./images/computer-img-1.jpg"
                 alt="computer img1"
                 width="370"
                 height="294"
+                class="image"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/computer-img-2.jpg"
                 alt="computer img2"
                 width="370"
                 height="294"
+                class="image"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/computer-img-3.jpg"
                 alt="computer img3"
                 width="370"
                 height="294"
+                class="image"
               />
             </li>
           </ul>
@@ -149,10 +162,11 @@
 
       <!-- Our Team -->
       <section class="section bg-team">
-        <div class="team-container container">
+        <div class="container">
+          <!-- from team-container to container -->
           <h2 class="section-title">Our Team</h2>
           <ul class="team list">
-            <li>
+            <li class="item">
               <img
                 src="./images/img-1.jpg"
                 alt="Mark Guerrero"
@@ -162,7 +176,7 @@
               <h3 class="name">Mark Guerrero</h3>
               <p class="position">Production Designer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/img-2.jpg"
                 alt="Tom Ford"
@@ -172,7 +186,7 @@
               <h3 class="name">Tom Ford</h3>
               <p class="position">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/img-3.jpg"
                 alt="Camila Garcia"
@@ -182,7 +196,7 @@
               <h3 class="name">Camila Garcia</h3>
               <p class="position">Marketing</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/img-4.jpg"
                 alt="Daniel Wilson"
@@ -199,10 +213,12 @@
 
     <!-- Footer -->
     <footer class="page-footer bg-footer">
-      <div class="footer-container container">
-        <a class="logo-link" href="index.html">
+      <div class="container">
+        <!-- from footer-container to container -->
+        <a class="logo-link footer link" href="index.html">
           <span class="logo">WEB</span><span class="studio-2">STUDIO</span></a
         >
+        <!-- from logo-link to logo-link footer link -->
         <p class="footer-description">
           Increase the flow of customers and
           <br />
